@@ -1,0 +1,110 @@
+@import "src/styles";
+
+:host {
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(45, 69, 83, 0.5) 103.42%);
+
+  @media (min-width: $desktop) {
+    height: 75px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11px;
+  }
+
+  .contacts {
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+
+      @media (min-width: $desktop) {
+        gap: 61px;
+      }
+    }
+
+    &__item {
+      .facebook {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url("/assets/icons/facebook.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        @media (min-width: $desktop) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .whatsapp {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url("/assets/icons/whatsapp.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        @media (min-width: $desktop) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .phone {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url("/assets/icons/circle-phone.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media (min-width: $desktop) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .messenger {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url("/assets/icons/messenger.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        @media (min-width: $desktop) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .address {
+        display: none;
+
+        @media (min-width: $desktop) {
+          display: flex;
+          flex-direction: column;
+          font-family: 'Prata';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: #000000;
+        }
+      }
+    }
+
+
+  }
+}

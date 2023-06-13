@@ -1,0 +1,39 @@
+<app-container>
+  <section class="rewiews">
+    <h2 class="title">Відгуки наших пацієнтів</h2>
+    <ul class="cards__list">
+      <li class="card">
+        <div class="photo"></div>
+        <div class="info">
+          <p class="name">Ірина</p>
+          <p class="review">Дуже вдячна лікарю за чудову роботу та професіоналізм! Буду звертатись ще!</p>
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="photo"></div>
+        <div class="info">
+          <p class="name">Ірина</p>
+          <p class="review">Дуже вдячна лікарю за чудову роботу та професіоналізм! Буду звертатись ще!</p>
+        </div>
+      </li>
+    </ul>
+
+    <form class="form">
+      <h2 class="title">Залишити відгук про нас</h2>
+      <div class="credentials">
+        <div class="form__field">
+          <app-input placeholder="Ваше ім’я"></app-input>
+        </div>
+        <div class="form__field">
+          <app-input type="phone" placeholder="Номер телефону"></app-input>
+        </div>
+      </div>
+      <div class="form__field">
+        <app-textarea placeholder="Ваш коментар"></app-textarea>
+      </div>
+
+      <app-button type="submit" text="Відправити" state="large"></app-button>
+    </form>
+  </section>
+</app-container>

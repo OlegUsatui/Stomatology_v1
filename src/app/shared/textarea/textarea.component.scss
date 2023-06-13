@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  width: 100%;
+
+  textarea {
+    width: 100%;
+    height: 113px;
+    padding: 14px 10px;
+
+    background: #FFFFFF;
+    border: 0.2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    background: #FFFFFF;
+
+    &::placeholder {
+      font-family: 'Prata';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      color: #535353;
+    }
+  }
+}

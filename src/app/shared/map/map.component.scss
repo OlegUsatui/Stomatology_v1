@@ -1,0 +1,15 @@
+@import "src/styles.scss";
+
+iframe {
+  width: 340px;
+  height: 80px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 30px;
+
+  @media (min-width: $desktop) {
+    width: 573px;
+    height: 300px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}

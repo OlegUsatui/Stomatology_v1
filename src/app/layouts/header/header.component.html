@@ -1,0 +1,34 @@
+<app-container>
+  <header>
+    <nav>
+      <app-logo></app-logo>
+
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#aboutUs">Послуги</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts">Контакти</a>
+          </li>
+          <li class="navigation__item">
+            <app-button text="Зателефонувати" (onClick)="phoneCall()"></app-button>
+          </li>
+          <li class="navigation__item">
+            <p class="address">м. Хотин, вулиця Шевченка, 59т</p>
+            <a href="tel:+380996348974" class="phone">+380 99 634 89 74</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-actions">
+        <div class="call"></div>
+<!--        <div class="burger-menu"></div>-->
+      </div>
+
+      <div class="tablet-actions">
+        <app-button text="Зателефонувати" (onClick)="phoneCall()"></app-button>
+      </div>
+    </nav>
+  </header>
+</app-container>

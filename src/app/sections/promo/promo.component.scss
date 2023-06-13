@@ -1,0 +1,111 @@
+@import 'src/styles';
+
+:host {
+  position: relative;
+  display: flex;
+  background-image: url("/assets/images/instruments.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 590px;
+  overflow: hidden;
+
+  @media (min-width: $desktop) {
+    min-height: 939px;
+    background-image: url("/assets/images/promo.png");
+  }
+
+  .promo {
+    display: flex;
+    justify-content: center;
+    padding: 160px 0 205px;
+
+    @media (min-width: $desktop) {
+      padding: 270px 0;
+      max-width: 505px;
+    }
+
+    .content {
+      z-index: 1;
+
+      .title {
+        font-family: 'Cormorant Garamond';
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #2D4553;
+        margin-bottom: 58px;
+
+        @media (min-width: $desktop) {
+          text-align: start;
+          margin-bottom: 80px;
+          font-size: 60px;
+          line-height: 60px;
+        }
+      }
+
+      .text {
+        font-family: 'Prata';
+        font-style: normal;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+
+        @media (min-width: $desktop) {
+          text-align: start;
+          max-width: 381px;
+          font-size: 20px;
+          line-height: 27px;
+          margin-bottom: 23px;
+        }
+      }
+
+      .button {
+        margin: 0 auto;
+        font-family: 'Prata';
+        font-style: normal;
+        max-width: 210px;
+        height: 35px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+
+        @media (min-width: $desktop) {
+          margin: 0;
+          max-width: 322px;
+          height: 55px;
+          font-size: 24px;
+          line-height: 33px;
+        }
+      }
+    }
+
+    .circle {
+      position: absolute;
+      width: 533px;
+      height: 558px;
+      left: -249px;
+      top: 32px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, rgba(164, 202, 222, 0.672) 0%, rgba(190, 216, 230, 0.7) 100%);
+      transform: rotate(-180deg);
+
+
+      @media (min-width: $desktop) {
+        left: -733px;
+        top: 0;
+        width: 1352px;
+        height: 1022px;
+      }
+    }
+  }
+}
+

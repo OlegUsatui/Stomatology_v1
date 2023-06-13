@@ -1,0 +1,20 @@
+<app-container>
+<section class="prices">
+  <div class="banner">
+    <h2 class="banner__title">Ціни</h2>
+  </div>
+
+  <div class="prices__container">
+    <ul class="prices__list">
+      <li class="prices__item" *ngFor="let price of prices">
+        <div class="service">{{ price.service }}</div>
+        <div class="price">{{ price.price }}</div>
+      </li>
+    </ul>
+
+<!--    <div class="more">-->
+<!--      Дізнатись всі ціни &ndash;&gt;-->
+<!--    </div>-->
+  </div>
+</section>
+</app-container>

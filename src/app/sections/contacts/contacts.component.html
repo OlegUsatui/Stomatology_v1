@@ -1,0 +1,28 @@
+<app-container>
+  <section class="contacts" id="contacts">
+    <h2 class="contacts__title">Контакти</h2>
+
+    <div class="contacts__phone">
+      <div class="phone-number">Номер телефону: +380 99 634 89 74</div>
+      <app-button class="button" text="Зателефонувати" (onClick)="phoneCall()"></app-button>
+    </div>
+
+    <div class="contacts__wrapper">
+      <div class="contacts__block">
+        <div class="address">
+          Адреса:<br>
+          вулиця Шевченка, 59т<br>
+          Хотин,Чернівецька область, 60000
+        </div>
+        <div class="schedule">
+          Графік роботи:<br>
+          пн-пт: 09:00–17:00<br>
+          сб: 09:00–15:00<br>
+          нд: зачинено
+        </div>
+      </div>
+
+      <app-map></app-map>
+    </div>
+  </section>
+</app-container>

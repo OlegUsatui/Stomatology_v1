@@ -1,0 +1,16 @@
+@import "src/styles";
+
+:host {
+  display: block;
+  width: 100%;
+  max-width: $mobile;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}

@@ -1,0 +1,43 @@
+@import "src/styles";
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #2D4553;
+
+  &__icon {
+    background-image: url('/assets/icons/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+
+    @media (min-width: $tablet) {
+      width: 39px;
+      height: 36px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 49px;
+      height: 50px;
+    }
+  }
+
+  &__text {
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 8px;
+    color: #2D4553;
+
+    @media (min-width: $tablet) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
